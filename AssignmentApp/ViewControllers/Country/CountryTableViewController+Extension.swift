@@ -37,4 +37,9 @@ extension CountryTableViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(Constants.CONSTRAINTS.TABLEVIEW_CELL_HEIGHT)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "SHOW_DETAIL", sender: self)
+    }
+
 }

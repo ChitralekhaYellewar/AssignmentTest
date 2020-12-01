@@ -24,4 +24,16 @@ class CountryTableViewController: UIViewController {
             self?.tableView.reloadData()
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedPath = tableView.indexPathForSelectedRow else { return }
+        if let detailView = segue.destination as? CountryDetailViewController {
+            switch viewModel.countryCells.value[selectedPath.row] {
+            case .normal(let vm):
+                detailView.detailContent = CountryDetailViewScreenModel(countryVM: vm)
+            case .empty, .error:
+                break
+            }
+        }
+    }
 }
