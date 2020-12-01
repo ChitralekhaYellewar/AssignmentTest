@@ -23,7 +23,23 @@
 		B82E1F9825763DF4007BAFE4 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E1F9725763DF4007BAFE4 /* CountryTableViewCell.swift */; };
 		B82E1F9D25763E10007BAFE4 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E1F9C25763E10007BAFE4 /* Country.swift */; };
 		B82E1FA425763E6F007BAFE4 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E1FA325763E6F007BAFE4 /* AppUtils.swift */; };
+		B82E1FAE25765612007BAFE4 /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E1FAD25765612007BAFE4 /* CountryDetailViewController.swift */; };
+		B82E1FB225765647007BAFE4 /* CountryDetailViewScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E1FB125765647007BAFE4 /* CountryDetailViewScreenModel.swift */; };
+		B82E1FB6257662E4007BAFE4 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E1FB5257662E4007BAFE4 /* DatabaseManager.swift */; };
+		B82E1FDC25767956007BAFE4 /* BindableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E1FDB25767956007BAFE4 /* BindableTests.swift */; };
+		B82E1FE3257679B2007BAFE4 /* MockContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E1FE2257679B2007BAFE4 /* MockContent.swift */; };
+		B82E1FEA25767A8D007BAFE4 /* CountryTableViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E1FE925767A8D007BAFE4 /* CountryTableViewViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B82E1FD02576792E007BAFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B82E1F4B25763B84007BAFE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B82E1F5225763B84007BAFE4;
+			remoteInfo = AssignmentApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B0495867C5B51BAF4219A161 /* Pods_AssignmentApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssignmentApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +60,15 @@
 		B82E1F9725763DF4007BAFE4 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		B82E1F9C25763E10007BAFE4 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		B82E1FA325763E6F007BAFE4 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		B82E1FAD25765612007BAFE4 /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
+		B82E1FB125765647007BAFE4 /* CountryDetailViewScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewScreenModel.swift; sourceTree = "<group>"; };
+		B82E1FB5257662E4007BAFE4 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		B82E1FCB2576792E007BAFE4 /* AssignmentAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B82E1FCF2576792E007BAFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B82E1FDA25767956007BAFE4 /* AssignmentAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssignmentAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B82E1FDB25767956007BAFE4 /* BindableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableTests.swift; sourceTree = "<group>"; };
+		B82E1FE2257679B2007BAFE4 /* MockContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContent.swift; sourceTree = "<group>"; };
+		B82E1FE925767A8D007BAFE4 /* CountryTableViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewViewModelTests.swift; sourceTree = "<group>"; };
 		C882CC8FCAF7C0E18002CFB5 /* Pods-AssignmentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentApp.debug.xcconfig"; path = "Target Support Files/Pods-AssignmentApp/Pods-AssignmentApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4AC5A5B4500F79EE6BC4BDC /* Pods-AssignmentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentApp.release.xcconfig"; path = "Target Support Files/Pods-AssignmentApp/Pods-AssignmentApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +79,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				339A2ED6162B5E35670A1B01 /* Pods_AssignmentApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B82E1FC82576792E007BAFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				B82E1F5525763B84007BAFE4 /* AssignmentApp */,
+				B82E1FCC2576792E007BAFE4 /* AssignmentAppTests */,
 				B82E1F5425763B84007BAFE4 /* Products */,
 				AF4BA8CA291C8AB2DF069CAC /* Pods */,
 				689C3504B7DB720EC094F991 /* Frameworks */,
@@ -91,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				B82E1F5325763B84007BAFE4 /* AssignmentApp.app */,
+				B82E1FCB2576792E007BAFE4 /* AssignmentAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +132,7 @@
 		B82E1F5525763B84007BAFE4 /* AssignmentApp */ = {
 			isa = PBXGroup;
 			children = (
+				B82E1FB4257662D8007BAFE4 /* Database */,
 				B82E1FA225763E65007BAFE4 /* Utils */,
 				B82E1F9B25763E07007BAFE4 /* Model */,
 				B82E1F9625763DEA007BAFE4 /* View */,
@@ -150,6 +185,7 @@
 		B82E1F8425763D4B007BAFE4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B82E1FAC25765607007BAFE4 /* CountryDetail */,
 				B82E1F8525763D60007BAFE4 /* Country */,
 			);
 			path = ViewControllers;
@@ -167,6 +203,7 @@
 		B82E1F8D25763D9F007BAFE4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B82E1FB02576563A007BAFE4 /* CountryDetail */,
 				B82E1F8E25763DAD007BAFE4 /* Country */,
 			);
 			path = ViewModel;
@@ -214,6 +251,66 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		B82E1FAC25765607007BAFE4 /* CountryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B82E1FAD25765612007BAFE4 /* CountryDetailViewController.swift */,
+			);
+			path = CountryDetail;
+			sourceTree = "<group>";
+		};
+		B82E1FB02576563A007BAFE4 /* CountryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B82E1FB125765647007BAFE4 /* CountryDetailViewScreenModel.swift */,
+			);
+			path = CountryDetail;
+			sourceTree = "<group>";
+		};
+		B82E1FB4257662D8007BAFE4 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				B82E1FB5257662E4007BAFE4 /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		B82E1FCC2576792E007BAFE4 /* AssignmentAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B82E1FE825767A7A007BAFE4 /* ViewModel */,
+				B82E1FE125767988007BAFE4 /* Mock */,
+				B82E1FD925767941007BAFE4 /* Helper */,
+				B82E1FCF2576792E007BAFE4 /* Info.plist */,
+			);
+			path = AssignmentAppTests;
+			sourceTree = "<group>";
+		};
+		B82E1FD925767941007BAFE4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B82E1FDB25767956007BAFE4 /* BindableTests.swift */,
+				B82E1FDA25767956007BAFE4 /* AssignmentAppTests-Bridging-Header.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B82E1FE125767988007BAFE4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B82E1FE2257679B2007BAFE4 /* MockContent.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		B82E1FE825767A7A007BAFE4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B82E1FE925767A8D007BAFE4 /* CountryTableViewViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -236,6 +333,24 @@
 			productReference = B82E1F5325763B84007BAFE4 /* AssignmentApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B82E1FCA2576792E007BAFE4 /* AssignmentAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B82E1FD42576792E007BAFE4 /* Build configuration list for PBXNativeTarget "AssignmentAppTests" */;
+			buildPhases = (
+				B82E1FC72576792E007BAFE4 /* Sources */,
+				B82E1FC82576792E007BAFE4 /* Frameworks */,
+				B82E1FC92576792E007BAFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B82E1FD12576792E007BAFE4 /* PBXTargetDependency */,
+			);
+			name = AssignmentAppTests;
+			productName = AssignmentAppTests;
+			productReference = B82E1FCB2576792E007BAFE4 /* AssignmentAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,6 +362,11 @@
 				TargetAttributes = {
 					B82E1F5225763B84007BAFE4 = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					B82E1FCA2576792E007BAFE4 = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
+						TestTargetID = B82E1F5225763B84007BAFE4;
 					};
 				};
 			};
@@ -264,6 +384,7 @@
 			projectRoot = "";
 			targets = (
 				B82E1F5225763B84007BAFE4 /* AssignmentApp */,
+				B82E1FCA2576792E007BAFE4 /* AssignmentAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +397,13 @@
 				B82E1F6325763B84007BAFE4 /* LaunchScreen.storyboard in Resources */,
 				B82E1F6025763B84007BAFE4 /* Assets.xcassets in Resources */,
 				B82E1F5E25763B84007BAFE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B82E1FC92576792E007BAFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,12 +458,15 @@
 			files = (
 				B82E1F8B25763D83007BAFE4 /* CountryTableViewController+Extension.swift in Sources */,
 				B82E1F9025763DB7007BAFE4 /* CountryViewModel.swift in Sources */,
+				B82E1FB6257662E4007BAFE4 /* DatabaseManager.swift in Sources */,
+				B82E1FB225765647007BAFE4 /* CountryDetailViewScreenModel.swift in Sources */,
 				B82E1F8125763D31007BAFE4 /* Bindable.swift in Sources */,
 				B82E1FA425763E6F007BAFE4 /* AppUtils.swift in Sources */,
 				B82E1F5725763B84007BAFE4 /* AppDelegate.swift in Sources */,
 				B82E1F9825763DF4007BAFE4 /* CountryTableViewCell.swift in Sources */,
 				B82E1F8725763D6D007BAFE4 /* CountryTableViewController.swift in Sources */,
 				B82E1F5925763B84007BAFE4 /* SceneDelegate.swift in Sources */,
+				B82E1FAE25765612007BAFE4 /* CountryDetailViewController.swift in Sources */,
 				B82E1F9D25763E10007BAFE4 /* Country.swift in Sources */,
 				B82E1F7125763C6B007BAFE4 /* AppServerClient.swift in Sources */,
 				B82E1F7D25763CEE007BAFE4 /* Constants.swift in Sources */,
@@ -343,7 +474,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B82E1FC72576792E007BAFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B82E1FDC25767956007BAFE4 /* BindableTests.swift in Sources */,
+				B82E1FE3257679B2007BAFE4 /* MockContent.swift in Sources */,
+				B82E1FEA25767A8D007BAFE4 /* CountryTableViewViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B82E1FD12576792E007BAFE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B82E1F5225763B84007BAFE4 /* AssignmentApp */;
+			targetProxy = B82E1FD02576792E007BAFE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B82E1F5C25763B84007BAFE4 /* Main.storyboard */ = {
@@ -521,6 +670,51 @@
 			};
 			name = Release;
 		};
+		B82E1FD22576792E007BAFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YC7MN6KT93;
+				INFOPLIST_FILE = AssignmentAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ex.AssignmentAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AssignmentAppTests/Helper/AssignmentAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssignmentApp.app/AssignmentApp";
+			};
+			name = Debug;
+		};
+		B82E1FD32576792E007BAFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YC7MN6KT93;
+				INFOPLIST_FILE = AssignmentAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ex.AssignmentAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AssignmentAppTests/Helper/AssignmentAppTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssignmentApp.app/AssignmentApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -538,6 +732,15 @@
 			buildConfigurations = (
 				B82E1F6825763B84007BAFE4 /* Debug */,
 				B82E1F6925763B84007BAFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B82E1FD42576792E007BAFE4 /* Build configuration list for PBXNativeTarget "AssignmentAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B82E1FD22576792E007BAFE4 /* Debug */,
+				B82E1FD32576792E007BAFE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
