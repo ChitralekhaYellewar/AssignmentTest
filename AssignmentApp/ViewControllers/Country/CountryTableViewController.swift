@@ -13,6 +13,7 @@ class CountryTableViewController: UIViewController {
     let viewModel = CountryViewModel()
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         title = Constants.General.VIEW_TITLE
         bindViewModel()
         viewModel.getCountries()
@@ -21,10 +22,13 @@ class CountryTableViewController: UIViewController {
     //MARK: - bind ViewModel data.
     func bindViewModel() {
         viewModel.countryCells.bindAndFire() { [weak self] _ in
-            self?.tableView.reloadData()
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
         }
     }
     
+    //MARK: - prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let selectedPath = tableView.indexPathForSelectedRow else { return }
         if let detailView = segue.destination as? CountryDetailViewController {
