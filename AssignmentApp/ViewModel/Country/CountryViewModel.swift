@@ -42,6 +42,9 @@ class CountryViewModel {
                     }
                     self?.countryDataResponse = country
                     
+                    //save to offline storage.
+                    DatabaseManager().saveData(country.Response)
+                    
                     self?.countryCells.value = country.Response.compactMap {
                         CountryTableViewCellType.normal(cellViewModel: $0 as CountryCellViewModel)
                     }
@@ -49,6 +52,14 @@ class CountryViewModel {
                 case .failure(let error):
                     self?.countryCells.value = [.error(message: error?.getErrorMessage() ?? Constants.ERRORS.NO_INTERNET)]
                 }
+            }
+        } else if (DatabaseManager().getDataFromDatabase().count > 0 ) {
+            let content = DatabaseManager().getDataFromDatabase()
+            
+            self.countryDataResponse = CountriesDataResponse(Response: content)
+                    
+            self.countryCells.value = content.compactMap {
+                CountryTableViewCellType.normal(cellViewModel: $0 as CountryCellViewModel)
             }
         } else {
             self.countryCells.value = [.error(message: Constants.ERRORS.NO_INTERNET)]

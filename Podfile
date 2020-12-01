@@ -6,7 +6,9 @@ target 'AssignmentApp' do
   use_frameworks!
 
   # Pods for AssignmentApp
-   pod 'Alamofire', '~> 5.2'
+  pod 'Alamofire', '~> 5.2'
   pod 'MBProgressHUD', '~> 1.2'
   pod 'SDWebImage', '~> 5.0'
+  pod 'RealmSwift'
+
 end

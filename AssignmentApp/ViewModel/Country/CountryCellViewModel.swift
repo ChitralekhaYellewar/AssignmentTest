@@ -14,52 +14,52 @@ protocol CountryCellViewModel {
     var countryName: String? { get }
     var countryRegion: String? { get }
     
-    var code: String? { get }
-    var nativeName: String? { get }
-    var latitude: String? { get }
-    var longitude: String? { get }
-    var currencyName: String? { get }
-    var currencySymbol: String? { get }
+    var countryCode: String? { get }
+    var countryNativeName: String? { get }
+    var countryLatitude: String? { get }
+    var countryLongitude: String? { get }
+    var countryCurrencyName: String? { get }
+    var countryCurrencySymbol: String? { get }
 }
 
 extension Country: CountryCellViewModel {
-    var code: String? {
-        return Alpha2Code
-    }
-    
-    var nativeName: String? {
-        return NativeName
-    }
-    
-    var latitude: String? {
-        return Latitude
-    }
-    
-    var longitude: String? {
-        return Longitude
-    }
-    
-    var currencyName: String? {
-        return CurrencyName
-    }
-    
-    var currencySymbol: String? {
-        return CurrencySymbol
-    }
-    
     var country: Country? {
         return self
     }
     
     var countryImg: String? {
-        return FlagPng
+        return flagImg
     }
     
     var countryName: String? {
-        return Name
+        return name
     }
     
     var countryRegion: String? {
-        return Region
+        return region
+    }
+    
+    var countryNativeName: String? {
+        return nativeName
+    }
+    
+    var countryLatitude: String? {
+        return latitude
+    }
+    
+    var countryLongitude: String? {
+        return longitude
+    }
+    
+    var countryCurrencyName: String? {
+        return currencyName
+    }
+    
+    var countryCurrencySymbol: String? {
+        return currencySymbol
+    }
+    
+    var countryCode: String? {
+        return code
     }
 }

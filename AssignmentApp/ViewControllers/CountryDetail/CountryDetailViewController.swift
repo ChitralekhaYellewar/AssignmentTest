@@ -35,12 +35,12 @@ class CountryDetailViewController: UIViewController {
             countryDetailImage.sd_setImage(with: imgUrl, placeholderImage: UIImage(named: Constants.General.NO_IMAGE))
             countryDetailName.text = content.countryName
             countryDetailRegion.text = content.countryRegion
-            countryDetailCode.text = content.code
-            countryDetailNativeName.text = content.nativeName
-            countryDetailLatitude.text = content.latitude
-            countryDetailLongitude.text = content.longitude
-            countryDetailCurrencyName.text = content.currencyName
-            countryDetailCurrencySymbol.text = content.currencySymbol
+            countryDetailCode.text = content.countryCode
+            countryDetailNativeName.text = content.countryNativeName
+            countryDetailLatitude.text = content.countryLatitude
+            countryDetailLongitude.text = content.countryLongitude
+            countryDetailCurrencyName.text = content.countryCurrencyName
+            countryDetailCurrencySymbol.text = content.countryCurrencySymbol
         }
     }
 }
